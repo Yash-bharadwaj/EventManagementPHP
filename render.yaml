@@ -1,0 +1,17 @@
+```yaml
+services:
+  - type: web
+    name: event-management
+    env: php
+    buildCommand: composer install
+    startCommand: heroku-php-apache2
+    envVars:
+      - key: DB_HOST
+        value: dpg-your-database-host
+      - key: DB_NAME
+        value: your_database_name
+      - key: DB_USER
+        value: your_database_user
+      - key: DB_PASS
+        value: your_database_password
+```

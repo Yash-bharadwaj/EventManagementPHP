@@ -1,0 +1,10 @@
+# 1. Create .gitignore file
+event_management/.gitignore
+
+vendor/
+.env
+.DS_Store
+uploads/*
+!uploads/.gitkeep
+config/database.php
+*.log
